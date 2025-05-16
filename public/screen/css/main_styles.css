@@ -65,6 +65,35 @@
   left: 568px;
 }
 
+/* 기존 .box .group 스타일 제거 (중복 방지) */
+
+/* 새로운 v67_142 스타일 적용 */
+.v67_142 {
+  width: 712px;
+  height: 64px;
+  background: rgba(217, 217, 217, 1);
+  opacity: 1;
+  position: absolute;
+  top: 64px; /* 기존 위치 유지 (top: 64px) */
+  left: 568px; /* 기존 위치 유지 (left: 568px) */
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  color: #000;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: background 0.3s, border 0.3s;
+}
+
+/* 입력 필드에 포커스 시 스타일 */
+.v67_142:focus {
+  background: rgba(217, 217, 217, 0.9);
+  border: 1px solid #686BFF;
+}
+
+
 .box .rectangle {
   position: absolute;
   width: 56px;
