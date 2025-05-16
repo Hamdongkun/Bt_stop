@@ -4,19 +4,120 @@
 body {
   font-size: 14px;
 }
-.v23_49 {
-  width: 100%;
-  height: 1280px;
-  background: url("../images/v23_49.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+
+.account {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 56px;
+  left: 1363px;
 }
+
+.delivery {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 60px;
+  left: 1459px;
+}
+
+.cartchart {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 60px;
+  left: 1555px;
+}
+
+.text-wrapper-3 {
+  width: 70px;
+  top: 256px;
+  left: 285px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 24px;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.text-wrapper-6 {
+  width: 80px;
+  top: 256px;
+  left: 385px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 24px;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.line1 {
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  top: 184px;
+  left: 259px;
+  object-fit: cover;
+}
+
+.line2 {
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  top: 344px;
+  left: 259px;
+  object-fit: cover;
+}
+
+.line3 {
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  top: 463px;
+  left: 259px;
+  object-fit: cover;
+}
+
+.line4 {
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  top: 542px;
+  left: 259px;
+  object-fit: cover;
+}
+
+.line5 {
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  top: 605px;
+  left: 259px;
+  object-fit: cover;
+}
+
+.line6 {
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  top: 680px;
+  left: 259px;
+  object-fit: cover;
+}
+
+.line7 {
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  top: 861px;
+  left: 259px;
+  object-fit: cover;
+}
+
 .v8_62 {
   width: 100%;
   height: 100%;
@@ -115,30 +216,55 @@ body {
   left: 0px;
 }
 .v8_72 {
-  width: 200px;
-  color: rgba(104,106,255,1);
+  color: #686aff;
   position: absolute;
+  width: 200px;
   top: 52px;
   left: 339px;
-  font-family: Inter;
-  font-weight: Black Italic;
+  font-family: "Inter-BlackItalic", Helvetica;
+  font-weight: 900;
+  font-style: italic;
   font-size: 64px;
-  opacity: 1;
-  text-align: left;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
 }
-.v8_73 {
+
+/*검색*/
+/* 검색 입력칸 */
+.search_input {
   width: 712px;
   height: 64px;
-  background: url("../images/v8_73.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: rgba(217, 217, 217, 1);
   opacity: 1;
   position: absolute;
-  top: 56px;
-  left: 587px;
-  overflow: hidden;
+  top: 64px; /* 기존 위치 유지 (top: 64px) */
+  left: 568px; /* 기존 위치 유지 (left: 568px) */
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  color: #000;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: background 0.3s, border 0.3s;
 }
+
+/* 입력 필드에 포커스 시 스타일 */
+.search_input:focus {
+  background: rgba(217, 217, 217, 0.9);
+  border: 1px solid #686BFF;
+}
+
+.vuesax-linear-search {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 78px;
+  left: 1226px;
+}
+
 .v8_74 {
   width: 712px;
   height: 64px;
@@ -226,7 +352,7 @@ body {
   background: rgba(217,217,217,1);
   opacity: 1;
   position: absolute;
-  top: 470px;
+  top: 472px;
   left: 259px;
   overflow: hidden;
 }

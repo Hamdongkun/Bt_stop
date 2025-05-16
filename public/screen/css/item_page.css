@@ -1,0 +1,129 @@
+.account {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 82px;
+  left: 1364px;
+}
+.delivery {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 86px;
+  left: 1458px;
+}
+.cartchart {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 82px;
+  left: 1554px;
+}
+
+.logo {
+  color: #686BFF;
+  position: absolute; /* 절대 위치 유지 */
+  width: 200px;
+  top: 78px;
+  left: 339px;
+  font-family: "Inter-BlackItalic", Helvetica;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.search_input {
+  width: 712px;
+  height: 64px;
+  background: rgba(217, 217, 217, 1);
+  opacity: 1;
+  position: absolute;
+  top: 82px; /* 기존 위치 유지 (top: 64px) */
+  left: 587px; /* 기존 위치 유지 (left: 568px) */
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  color: #000;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: background 0.3s, border 0.3s;
+}
+
+/* 입력 필드에 포커스 시 스타일 */
+.search_input:focus {
+  background: rgba(217, 217, 217, 0.9);
+  border: 1px solid #686BFF;
+}
+
+/* 검색 버튼 아이콘 수정 */
+.search-button {
+  position: absolute;
+  top: 90px; /* 검색창과 같은 세로 위치 */
+  left: 1264px; /* 검색창 우측에 위치 */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button img.vuesax-linear-search {
+  width: 48x;
+  height: 48px;
+  vertical-align: middle;
+  margin-left: -40px; /* 검색창 우측 정렬 */
+  position: relative; /* absolute 대신 relative로 변경 */
+  display: inline-block;
+}
+
+.line {
+  top: 191px;
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  left: 240px;
+  object-fit: cover;
+}
+
+.item_image {
+  position: absolute;
+  top: 270px;
+  left: 283px;
+  width: 480px;
+  height: 480px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  overflow: hidden;
+}
+
+.item_description {
+  width: 360px;
+  height: 360px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 281px;
+  left: 848px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 48px;
+  opacity: 1;
+  text-align: left;
+}
+
+.item_price {
+  width: 360px;
+  height: 36px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 281px;
+  left: 848px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}

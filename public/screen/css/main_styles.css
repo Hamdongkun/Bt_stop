@@ -67,8 +67,8 @@
 
 /* 기존 .box .group 스타일 제거 (중복 방지) */
 
-/* 새로운 v67_142 스타일 적용 */
-.v67_142 {
+/* 검색 입력칸 */
+.search_input {
   width: 712px;
   height: 64px;
   background: rgba(217, 217, 217, 1);
@@ -88,7 +88,7 @@
 }
 
 /* 입력 필드에 포커스 시 스타일 */
-.v67_142:focus {
+.search_input:focus {
   background: rgba(217, 217, 217, 0.9);
   border: 1px solid #686BFF;
 }
@@ -136,6 +136,7 @@
   background-color: #efefef;
 }
 
+/*로고*/
 .box .text-wrapper-2 {
   color: #686aff;
   position: absolute;

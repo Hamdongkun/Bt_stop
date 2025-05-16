@@ -10,7 +10,6 @@
     <div class="v87_144">
       <div class="v87_145"></div>
       <div class="name"></div>
-      <div class="v89_212"></div>
       <div class="name"></div>
 
       <div class="v89_206">
@@ -29,38 +28,55 @@
 
       <span class="v87_163">회원가입</span>
       <span class="v89_194">연락처</span>
+      <hr class="line1"/>
+      <hr class="line2" />
       <div class="name"></div>
 
       <!-- Buttle 텍스트 - 스타일 적용 -->
       <span class="v87_153 text-wrapper">Buttle</span>
       <hr class="line"/> 
+       <!-- 아이디 입력 필드 -->
       <div class="v87_165">
         <div class="v87_166"></div>
-        <span class="v87_167">아이디</span>
+        <input type="text" class="input-field v87_184" placeholder="아이디" />
       </div>
 
+      <!-- 비밀번호 입력 필드 -->
       <div class="v87_174">
         <div class="v87_175"></div>
-        <span class="v87_176">비밀번호</span>
+        <input type="password" class="input-field v87_184" placeholder="비밀번호" />
       </div>
 
+      <!-- 비밀번호 확인 입력 필드 -->
       <div class="v87_178">
         <div class="v87_179"></div>
-        <span class="v87_180">비밀번호 확인</span>
+        <input type="password" class="input-field v87_184" placeholder="비밀번호 확인" />
       </div>
+
+      <!-- 연락처 입력 필드 -->
 
       <div class="v87_190">
-        <div class="v87_191"></div>
+        <input type="tel" class="input-field v87_185" placeholder="" maxlength="3" pattern="[0-9]" required />
       </div>
 
-      <div class="v89_196">
-        <div class="v89_197"></div>
+      <!-- 연락처 2 -->
+      <div class="v87_191">
+        <input type="tel" class="input-field v87_185" placeholder="" maxlength="4" pattern="[0-9]" />
       </div>
 
+      <!-- 연락처 3 -->
+      <div class="v87_192">
+        <input type="tel" class="input-field v87_185" placeholder="" maxlength="4" pattern="[0-9]" />
+      </div>
+
+
+      <!-- 이메일 주소 입력 필드 -->
       <div class="v87_182">
         <div class="v87_183"></div>
-        <span class="v87_184">이메일 주소</span>
+        <input type="email" class="input-field v87_184" placeholder="이메일 주소" />
       </div>
     </div>
   </body>
 </html>
+
+<script type="module" src="../../버튼모음집/register.js"></script>

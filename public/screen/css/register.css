@@ -5,12 +5,44 @@ body {
   font-size: 14px;
 }
 
-.line {
+.input-field {
+  width: 500px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: "Inter-Light", Helvetica;
+  font-size: 18px;
+  color: rgba(120, 120, 120, 1);
+  padding: 0;
+}
+
+.v87_165 input,
+.v87_174 input,
+.v87_178 input,
+.v87_190 input,
+.v87_182 input {
+  margin-left: 10px;
+}
+
+
+c
+
+.line2 {
   position: absolute;
-  width: 720px;
+  width: 32px;
   height: 1px;
-  top: 227px;
-  left: 634px;
+  top: 580px;
+  left: 1084px;
+  object-fit: cover;
+}
+
+.line1 {
+  position: absolute;
+  width: 32px;
+  height: 1px;
+  top: 580px;
+  left: 880px;
   object-fit: cover;
 }
 
@@ -326,33 +358,53 @@ body {
   text-align: left;
 }
 .v87_190 {
+  position: absolute;
   width: 123px;
   height: 56px;
-  background: url("../images/v87_190.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
+  background: rgba(228, 228, 228, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  box-sizing: border-box;
   top: 561px;
   left: 737px;
-  overflow: hidden;
 }
+
 .v87_191 {
+  position: absolute;
   width: 123px;
   height: 56px;
-  background: rgba(228,228,228,1);
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  border: 1px solid rgba(0,0,0,1);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  background: rgba(228, 228, 228, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 15px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  box-sizing: border-box;
+  top: 561px;
+  left: 932px;
 }
+
+.v87_192 {
+  position: absolute;
+  width: 123px;
+  height: 56px;
+  background: rgba(228, 228, 228, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  box-sizing: border-box;
+  top: 561px;
+  left: 1136px;
+}
+
 .v89_196 {
   width: 123px;
   height: 56px;
@@ -413,8 +465,21 @@ body {
   width: 458px;
   color: rgba(120,120,120,1);
   position: absolute;
-  top: 16px;
-  left: 35px;
+  top: 10px;
+  left: 20px;
+  font-family: Inter;
+  font-weight: Light;
+  font-size: 18px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v87_185 {
+  width: 458px;
+  color: rgba(120,120,120,1);
+  position: absolute;
+  top: 10px;
+  left: 3px;
   font-family: Inter;
   font-weight: Light;
   font-size: 18px;
