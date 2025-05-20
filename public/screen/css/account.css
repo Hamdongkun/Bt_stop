@@ -258,11 +258,16 @@ body {
 }
 
 .vuesax-linear-search {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
   position: absolute;
-  width: 32px;
-  height: 32px;
-  top: 78px;
-  left: 1226px;
+  overflow: hidden;
+  top: 72px;
+  left: 1220px;
 }
 
 .v8_74 {

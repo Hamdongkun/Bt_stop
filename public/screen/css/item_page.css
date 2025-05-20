@@ -119,11 +119,98 @@
   height: 36px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 281px;
+  top: 666px;
   left: 848px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+
+.payment_price {
+  width: 360px;
+  height: 36px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 238px;
+  left: 1363px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+
+.item_description2 {
+  width: 360px;
+  height: 36px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 310px;
+  left: 1363px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+.counter-container {
+    display: inline-flex;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 375px;
+    left: 1363px;
+}
+
+.counter-button {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  user-select: none;
+}
+
+.counter-value {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: white;
+}
+
+.item_amount {
+  width: 360px;
+  height: 36px;
+  color: #686BFF;
+  position: absolute;
+  top: 437px;
+  left: 1363px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 28px;
+  opacity: 1;
+  text-align: left;
+}
+
+.final_item_price {
+  width: 360px;
+  height: 36px;
+  color: #686BFF;
+  position: absolute;
+  top: 437px;
+  left: 1363px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 28px;
   opacity: 1;
   text-align: left;
 }

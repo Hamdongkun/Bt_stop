@@ -1,7 +1,7 @@
 import { setButtonEvent } from "./showAlert.js";
 
 //검색버튼
-setButtonEvent(".search-button", "public/버튼모음집/account.js");
+setButtonEvent(".vuesax-linear-search", "public/버튼모음집/account.js");
 
 //베스트탭 이동 버튼
 setButtonEvent(".text-wrapper-3", "public/버튼모음집/account.js");
