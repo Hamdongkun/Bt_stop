@@ -206,11 +206,90 @@
   height: 36px;
   color: #686BFF;
   position: absolute;
-  top: 437px;
-  left: 1363px;
+  top: 426px;
+  left: 1502px;
   font-family: Inter;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 36px;
   opacity: 1;
   text-align: left;
+}
+
+.cart-group {
+  width: 326px;
+  height: 72px;
+}
+
+.cart-rectangle {
+  position: absolute;
+  width: 154px;
+  height: 76px;
+  top: 480px;
+  left: 1364px;
+  background-color: #686aff;
+}
+
+.cart-text {
+  width: 220px;
+  top: 500px;
+  left: 1330px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.buy-group {
+  width: 326px;
+  height: 72px;
+}
+
+.buy-rectangle {
+  position: absolute;
+  width: 154px;
+  height: 76px;
+  top: 480px;
+  left: 1535px;
+  background-color: #686aff;
+}
+
+.buy-text {
+  width: 220px;
+  top: 500px;
+  left: 1505px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.review-title-text {
+  width: 360px;
+  height: 36px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 827px;
+  left: 283px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+
+.line2 {
+  top: 887px;
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  left: 259px;
+  object-fit: cover;
 }
