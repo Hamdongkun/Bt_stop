@@ -1,3 +1,9 @@
+.box {
+  width: 1920px;
+  height: 1280px;
+  position: absolute;
+}
+
 .account {
   position: absolute;
   width: 64px;
@@ -292,4 +298,30 @@
   height: 1px;
   left: 259px;
   object-fit: cover;
+}
+
+.customer-text {
+  width: 220px;
+  top: 916px;
+  left: 283px;
+  font-family: Inter;
+  font-weight: regular;
+  color: #000000;
+  font-size: 28px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.customer-text {
+  width: 220px;
+  top: 916px;
+  left: 283px;
+  font-family: Inter;
+  font-weight: regular;
+  color: #000000;
+  font-size: 28px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
 }
