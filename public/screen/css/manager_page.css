@@ -1,0 +1,353 @@
+.item_image {
+  position: absolute;
+  left: 287px;
+  top: 282px;
+  width: 480px;
+  height: 480px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  overflow: hidden;
+}
+
+.prductID-text {
+  width: 220px;
+  top: 320px;
+  left: 831px;
+  font-family: "Inter", Helvetica;
+  font-weight: normal;
+  color: #000000;
+  font-size: 32px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.prductID-input {
+  position: absolute;
+  top: 320px;
+  left: 1019px; 
+  width: 627px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.prductID-line {
+  top: 361px;
+  position: absolute;
+  width: 627px;
+  height: 1px;
+  left: 1019px;
+  object-fit: cover;
+}
+
+.sellerID-text {
+  width: 220px;
+  top: 400px;
+  left: 831px;
+  font-family: "Inter", Helvetica;
+  font-weight: normal;
+  color: #000000;
+  font-size: 32px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.sellerID-input {
+  position: absolute;
+  top: 400px;
+  left: 1019px; 
+  width: 627px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.sellerID-line {
+  top: 441px;
+  position: absolute;
+  width: 627px;
+  height: 1px;
+  left: 1019px;
+  object-fit: cover;
+}
+
+.categoryID-text {
+  width: 220px;
+  top: 480px;
+  left: 831px;
+  font-family: "Inter", Helvetica;
+  font-weight: normal;
+  color: #000000;
+  font-size: 32px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.categoryID-input {
+  position: absolute;
+  top: 480px;
+  left: 1019px; 
+  width: 627px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.categoryID-line {
+  top: 521px;
+  position: absolute;
+  width: 627px;
+  height: 1px;
+  left: 1019px;
+  object-fit: cover;
+}
+
+.product_name-text {
+  width: 220px;
+  top: 560px;
+  left: 831px;
+  font-family: "Inter", Helvetica;
+  font-weight: normal;
+  color: #000000;
+  font-size: 32px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.product_name-input {
+  position: absolute;
+  top: 560px;
+  left: 1019px; 
+  width: 627px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.product_name-line {
+  top: 601px;
+  position: absolute;
+  width: 627px;
+  height: 1px;
+  left: 1019px;
+  object-fit: cover;
+}
+
+.description-text {
+  width: 220px;
+  top: 640px;
+  left: 831px;
+  font-family: "Inter", Helvetica;
+  font-weight: normal;
+  color: #000000;
+  font-size: 32px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.description-input {
+  position: absolute;
+  top: 640px;
+  left: 1019px; 
+  width: 627px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.description-line {
+  top: 681px;
+  position: absolute;
+  width: 627px;
+  height: 1px;
+  left: 1019px;
+  object-fit: cover;
+}
+
+.price-text {
+  width: 220px;
+  top: 720px;
+  left: 831px;
+  font-family: "Inter", Helvetica;
+  font-weight: normal;
+  color: #000000;
+  font-size: 32px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.price-input {
+  position: absolute;
+  top: 720px;
+  left: 1019px; 
+  width: 627px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+
+.price-line {
+  top: 761px;
+  position: absolute;
+  width: 627px;
+  height: 1px;
+  left: 1019px;
+  object-fit: cover;
+}
+
+.stock-text {
+  width: 220px;
+  top: 800px;
+  left: 831px;
+  font-family: "Inter", Helvetica;
+  font-weight: normal;
+  color: #000000;
+  font-size: 32px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.stock-input {
+  position: absolute;
+  top: 800px;
+  left: 1019px; 
+  width: 627px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.stock-line {
+  top: 841px;
+  position: absolute;
+  width: 627px;
+  height: 1px;
+  left: 1019px;
+  object-fit: cover;
+}
+
+.upload-button {
+  width: 86px;
+  height: 36px;
+  background: rgba(228,228,228,1);
+  opacity: 1;
+  position: absolute;
+  top: 791px;
+  left: 484px;
+  border: 3px solid rgba(0,0,0,1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+
+.upload-text {
+  width: 80px;
+  top: -3px;
+  left: 0px;
+  font-family: "Inter", Helvetica;
+  font-weight: normal;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.set-button {
+  width: 121px;
+  height: 36px;
+  background: rgba(228,228,228,1);
+  opacity: 1;
+  position: absolute;
+  left: 1443px;
+  top: 880px;  
+  border: 3px solid rgba(0,0,0,1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+
+.set-text {
+  width: 116px;
+  top: -3px;
+  left: 0px;
+  font-family: "Inter", Helvetica;
+  font-weight: normal;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.delete-button {
+  width: 57px;
+  height: 36px;
+  background: rgba(228,228,228,1);
+  opacity: 1;
+  position: absolute;
+  left: 1589px;
+  top: 880px;  
+  border: 3px solid rgba(0,0,0,1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+
+.delete-text {
+  width: 51px;
+  top: -3px;
+  left: 0px;
+  font-family: "Inter", Helvetica;
+  font-weight: normal;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}

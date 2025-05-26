@@ -1,0 +1,98 @@
+.logo1 {
+  color: #686BFF;
+  position: absolute; /* 절대 위치 유지 */
+  width: 200px;
+  top: 43px;
+  left: 230px;
+  font-family: "Inter-BlackItalic", Helvetica;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.line1 {
+  top: 115px;
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  left: 205px;
+  object-fit: cover;
+}
+
+.title-text {
+  width: 311px;
+  top: 144px;
+  left: 234px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 48px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.line2 {
+  top: 226px;
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  left: 205px;
+  object-fit: cover;
+}
+
+.subtitle-text {
+  width: 311px;
+  top: 249px;
+  left: 255px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.line3 {
+  top: 319px;
+  position: absolute;
+  width: 1049px;
+  height: 1px;
+  left: 205px;
+  object-fit: cover;
+}
+
+.payment-title {
+  width: 220px;
+  left: 1309px;
+  top: 265px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.price-text {
+  width: 220px;
+  left: 1448px;
+  top: 347px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #686BFF;
+  font-size: 32px;
+  text-align: left;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
