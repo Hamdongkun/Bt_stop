@@ -96,3 +96,184 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
+.payment-rectangle {
+  position: absolute;
+  width: 324px;
+  height: 72px;
+  top: 419px;
+  left: 1310px;
+  background-color: #686aff;
+}
+
+.payment-text {
+  width: 220px;
+  top: 435px;
+  left: 1362px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.customer-box {
+  position: absolute;
+  left: 234px;
+  top: 365px;
+  width: 560px;
+  height: 72px;
+  background-color: #E4E4E4;
+  border: 1px solid #787878;
+  border-radius: 15px;
+}
+
+.customer-input {
+  position: absolute;
+  top: 380px;
+  left: 265px; 
+  width: 627px;
+  border: none;
+  background-color: transparent;
+  color: #787878;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.post-box {
+  position: absolute;
+  left: 390px;
+  top: 468px;
+  width: 404px;
+  height: 72px;
+  background-color: #E4E4E4;
+  border: 1px solid #787878;
+  border-radius: 15px;
+}
+
+.post-input {
+  position: absolute;
+  left: 412px; 
+  top: 483px;
+  width: 404px;
+  border: none;
+  background-color: transparent;
+  color: #787878;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.address-box {
+  position: absolute;
+  left: 234px;
+  top: 568px;
+  width: 1020px;
+  height: 72px;
+  background-color: #E4E4E4;
+  border: 1px solid #787878;
+  border-radius: 15px;
+}
+
+.address-input {
+  position: absolute;
+  left: 265px; 
+  top: 583px;
+  width: 404px;
+  border: none;
+  background-color: transparent;
+  color: #787878;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.detail_address-box {
+  position: absolute;
+  left: 234px;
+  top: 669px;
+  width: 1020px;
+  height: 72px;
+  background-color: #E4E4E4;
+  border: 1px solid #787878;
+  border-radius: 15px;
+}
+
+.detail_address-input {
+  position: absolute;
+  left: 265px; 
+  top: 684px;
+  width: 404px;
+  border: none;
+  background-color: transparent;
+  color: #787878;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.phone-box {
+  position: absolute;
+  left: 234px;
+  top: 771px;
+  width: 1020px;
+  height: 72px;
+  background-color: #E4E4E4;
+  border: 1px solid #787878;
+  border-radius: 15px;
+}
+
+.phone-input {
+  position: absolute;
+  left: 265px; 
+  top: 786px;
+  width: 404px;
+  border: none;
+  background-color: transparent;
+  color: #787878;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.find_address-box {
+  position: absolute;
+  left: 234px;
+  top: 468px;
+  width: 144px;
+  height: 72px;
+  background-color: #E4E4E4;
+  border: 1px solid #686BFF;
+}
+
+.find_address-text {
+  width: 96px;
+  top: 485px;
+  left: 258px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: normal;
+  color: #686BFF;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.find_address-text {
+  width: 96px;
+  top: 485px;
+  left: 258px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: normal;
+  color: #686BFF;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
