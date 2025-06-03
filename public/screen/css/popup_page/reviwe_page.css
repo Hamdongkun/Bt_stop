@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 480px;
+  height: 560px;
+  overflow: hidden; /* 필요 시 스크롤 막기 */
+  background-color: #f0f0f0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: f0f0f0;
+  box-sizing: border-box;
+}
+
+.title-rectangle {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  width: 720px;
+  height: 72px;
+  background-color: #686aff;
+}
+
+.title-text {
+  width: 256px;
+  height: 54px;
+  left: 34px;
+  top: 18px;
+  font-family: Inter;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.item-text {
+  width: 256px;
+  height: 54px;
+  left: 23px;
+  top: 96px;
+  font-family: Inter;
+  font-weight: regualr;
+  color: #000000;
+  font-size: 24px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.review-input {
+  width: 640px;
+  height: 280px;
+  background: #FFFFFF;
+  opacity: 1;
+  position: absolute;
+  top: 157.5px; 
+  left: 40px; 
+  border: 1px solid #000000;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+  transition: background 0.3s, border 0.3s;
+  resize: none; 
+}
+
+.write-rectangle {
+  left: 564px;
+  top: 472px;
+  position: absolute;
+  width: 124px;
+  height: 56px;
+  background-color: #686aff;
+}
+
+.write-text {
+  width: 92px;
+  height: 29px;
+  left: 580px;
+  top: 480px;
+  font-family: Inter;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}

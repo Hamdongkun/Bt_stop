@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 480px;
+  height: 560px;
+  overflow: hidden; /* 필요 시 스크롤 막기 */
+  background-color: #f0f0f0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: f0f0f0;
+  box-sizing: border-box;
+}
+
+.checkup-text {
+  width: 243px;
+  height: 54px;
+  left: 118px;
+  top: 142px;
+  font-family: Inter;
+  font-weight: bold;
+  color: #000000;
+  font-size: 36px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.circle {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  top: 206px;
+  left: 176px;
+}
+
+.check-rectangle {
+  left: 78px;
+  top: 353px;
+  position: absolute;
+  width: 324px;
+  height: 76px;
+  background-color: #686aff;
+}
+
+.check-text {
+  width: 256px;
+  height: 32px;
+  left: 112px;
+  top: 375px;
+  font-family: Inter;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
