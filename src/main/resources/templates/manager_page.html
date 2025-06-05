@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>관리자 상품 등록</title>
+  <link rel="stylesheet" href="/css/manager_page.css" />
+</head>
+<body>
+<div class="container">
+  <h2>상품 등록/수정</h2>
+  <form action="/admin/product" method="post" enctype="multipart/form-data" class="product-form">
+    <label>상품 ID: <input type="number" name="productId" required /></label>
+    <label>판매자 ID: <input type="number" name="sellerId" required /></label>
+    <label>카테고리 ID: <input type="number" name="categoryId" required /></label>
+    <label>상품명: <input type="text" name="productName" required /></label>
+    <label>상품설명: <input type="text" name="description" required /></label>
+    <label>가격: <input type="number" name="price" required /></label>
+    <label>재고수량: <input type="number" name="stock" required /></label>
+    <label>상품 이미지 업로드: <input type="file" name="imageFile" accept="image/*" /></label>
+    <button type="submit">추가/수정</button>
+  </form>
+</div>
+</body>
+</html>

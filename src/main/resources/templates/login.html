@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Buttle - 로그인</title>
+    <link rel="stylesheet" href="/css/login.css" />
+</head>
+<body>
+<div class="login-container">
+    <div class="login-box">
+        <div class="logo">Buttle</div>
+
+        <form class="login-form" action="/login" method="post">
+            <input type="text" name="username" class="input-field" placeholder="아이디" required />
+            <input type="password" name="password" class="input-field" placeholder="비밀번호" required />
+            <button type="submit" class="rectangle">로그인</button>
+        </form>
+
+        <div class="login-links">
+            <div>회원가입</div>
+            <div>아이디 찾기</div>
+            <div>비밀번호 찾기</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

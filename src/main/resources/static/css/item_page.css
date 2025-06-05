@@ -1,0 +1,236 @@
+.box {
+  width: 1920px;
+  height: 1280px;
+  position: absolute;
+}
+
+.item_image {
+  position: absolute;
+  top: 270px;
+  left: 283px;
+  width: 480px;
+  height: 480px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  overflow: hidden;
+}
+
+.item_description {
+  width: 360px;
+  height: 360px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 281px;
+  left: 848px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 48px;
+  opacity: 1;
+  text-align: left;
+}
+
+.item_price {
+  width: 360px;
+  height: 36px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 666px;
+  left: 848px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+
+.payment_price {
+  width: 360px;
+  height: 36px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 238px;
+  left: 1363px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+
+.item_description2 {
+  width: 360px;
+  height: 36px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 310px;
+  left: 1363px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+.counter-container {
+    display: inline-flex;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 375px;
+    left: 1363px;
+}
+
+.counter-button {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  user-select: none;
+}
+
+.counter-value {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: white;
+}
+
+.item_amount {
+  width: 360px;
+  height: 36px;
+  color: #686BFF;
+  position: absolute;
+  top: 437px;
+  left: 1363px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 28px;
+  opacity: 1;
+  text-align: left;
+}
+
+.final_item_price {
+  width: 360px;
+  height: 36px;
+  color: #686BFF;
+  position: absolute;
+  top: 426px;
+  left: 1502px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+
+.cart-group {
+  width: 326px;
+  height: 72px;
+}
+
+.cart-rectangle {
+  position: absolute;
+  width: 154px;
+  height: 76px;
+  top: 480px;
+  left: 1364px;
+  background-color: #686aff;
+}
+
+.cart-text {
+  width: 220px;
+  top: 500px;
+  left: 1330px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.buy-group {
+  width: 326px;
+  height: 72px;
+}
+
+.buy-rectangle {
+  position: absolute;
+  width: 154px;
+  height: 76px;
+  top: 480px;
+  left: 1535px;
+  background-color: #686aff;
+}
+
+.buy-text {
+  width: 220px;
+  top: 500px;
+  left: 1505px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.review-title-text {
+  width: 360px;
+  height: 36px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 827px;
+  left: 283px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+
+.line2 {
+  top: 887px;
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  left: 259px;
+  object-fit: cover;
+}
+
+.customer-text {
+  width: 220px;
+  top: 916px;
+  left: 283px;
+  font-family: Inter;
+  font-weight: regular;
+  color: #000000;
+  font-size: 28px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.customer-text {
+  width: 220px;
+  top: 916px;
+  left: 283px;
+  font-family: Inter;
+  font-weight: regular;
+  color: #000000;
+  font-size: 28px;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
