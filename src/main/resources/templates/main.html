@@ -12,17 +12,16 @@
     <!-- 헤더 -->
     <nav class="navbar">
         <a href="/" class="logo">Buttle</a>
-        <form class="search-form">
-            <input type="search" class="search-input" placeholder="Search products" />
+        <form class="search-form" action="/search" method="get">
+            <input type="search" class="search-input" name="keyword" placeholder="Search products" />
             <button type="submit"><img src="/img/main/search.svg" alt="Search" /></button>
         </form>
         <ul class="nav-icons">
             <li><a href="#"><img src="/img/main/user.svg" alt="User" /></a></li>
             <li><a href="#"><img src="/img/main/delivery.svg" alt="Delivery" /></a></li>
-            <li><a href="#"><img src="/img/main/cart.svg" alt="Cart" /></a></li>
+            <li><a href="/cart" aria-label="Shopping bag"><img src="/img/main/cart.svg" alt="Cart" /></a></li>
         </ul>
         <a href="/login" class="login-button">로그인</a>
-        </form>
     </nav>
 
     <main>
@@ -36,11 +35,14 @@
         <section class="product-section">
             <div class="product-grid">
                 <th:block th:each="item : ${bestProducts}">
-                    <div class="product-card">
-                        <img th:src="@{${item.imageUrl}}" alt="상품 이미지" class="product-image" />
-                        <h3 th:text="${item.productName}">상품명</h3>
-                        <p th:text="${item.price} + '원'">가격</p>
-                    </div>
+                    <!-- 상품카드 전체에 링크 적용 -->
+                    <a th:href="@{'/product/' + ${item.productId}}" style="text-decoration: none; color: inherit;">
+                        <div class="product-card">
+                            <img th:src="@{${item.imageUrl}}" alt="상품 이미지" class="product-image" />
+                            <h3 th:text="${item.productName}">상품명</h3>
+                            <p th:text="${item.price} + '원'">가격</p>
+                        </div>
+                    </a>
                 </th:block>
             </div>
         </section>

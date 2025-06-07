@@ -17,12 +17,13 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
-                                "/", "/main", "/search", "/product/**","/product/*/review",  // ✅ 상세 페이지 허용
-                                "/css/**", "/js/**", "/img/**",          // ✅ 정적 리소스 허용
-                                "/admin", "/admin/**",                   // ✅ 관리자 페이지
-                                "/login", "/logout"                     // ✅ 로그인/로그아웃
+                                "/", "/main", "/search", "/product/**", "/product/*/review",
+                                "/css/**", "/js/**", "/img/**",
+                                "/admin", "/admin/**",
+                                "/login", "/logout",
+                                "/cart", "/cart/add", "/cart/*/add"
                         ).permitAll()
-                        .anyRequest().authenticated()
+                        .anyRequest().permitAll()
                 )
                 .formLogin(form -> form
                         .loginPage("/login")
@@ -33,7 +34,8 @@ public class SecurityConfig {
                         .logoutSuccessUrl("/main")
                         .permitAll()
                 )
-                .csrf(csrf -> csrf.disable());  // ✅ POST 요청 막힘 방지 (필요 시 조심히 사용)
+                .csrf(csrf -> csrf.ignoringRequestMatchers("/cart/add", "/cart/*/add"));  //
+
 
         return http.build();
     }

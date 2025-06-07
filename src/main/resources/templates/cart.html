@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link href="/css/cart.css" rel="stylesheet" />
+  <link href="/css/globals.css" rel="stylesheet" />
+  <title>Buttle - 장바구니</title>
+</head>
+<body>
+<div class="box">
+  <div class="overlap">
+    <nav class="navbar">
+      <a href="/" class="logo">Buttle</a>
+      <!--검색 -->
+      <form class="search-form" role="search">
+        <input type="search" class="search_input" aria-label="Search products" placeholder="" />
+        <button type="submit" class="search-button" aria-label="Submit search">
+          <img class="vuesax-linear-search" src="/img/main/search.svg" alt="Search icon" />
+        </button>
+      </form>
+      <!-- 네비게이션 -->
+      <ul class="nav-icons">
+        <li>
+          <a href="#" aria-label="User profile">
+            <img class="account" src="/img/main/user.svg" alt="User icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Group">
+            <img class="delivery" src="/img/main/delivery.svg" alt="Group icon" />
+          </a>
+        </li>
+        <li>
+          <a href="/cart" aria-label="Shopping bag">
+            <img class="cartchart" src="/img/main/cart.svg" alt="Shopping bag icon" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <hr class="line"/>
+    <span class="title-text">장바구니</span>
+
+    <!--선택박스-->
+    <div class="select-box"></div>
+    <span class="all-delete">전체선택</span>
+    <span class="select-delete">선택삭제</span>
+
+    <div class="cart-items-section">
+      <table class="cart-items-table">
+        <thead>
+        <tr>
+          <th>상품 ID</th>
+          <th>수량</th>
+          <th>추가일자</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${cartItems}">
+          <td th:text="${item.productId}">상품 ID</td>
+          <td th:text="${item.quantity}">수량</td>
+          <td th:text="${#temporals.format(item.addedAt, 'yyyy-MM-dd HH:mm')}">추가일자</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sero-line"></div>
+    <hr class="line2"/>
+    <span class="price-text-title">결제예정금액</span>
+    <span class="price-text">000,000원</span>
+    <div class="payment-rectangle"></div>
+    <span class="payment-text">결제하기</span>
+  </div>
+</div>
+</body>
+</html>
