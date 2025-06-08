@@ -45,7 +45,7 @@ public class AdminController {
 
         product.setSellerId(sellerId);
         product.setCategoryId(categoryId);
-        product.setProductName(productName);
+
         product.setDescription(description);
         product.setPrice(price);
         product.setStock(stock);
@@ -61,7 +61,6 @@ public class AdminController {
                 destFile.getParentFile().mkdirs();
                 imageFile.transferTo(destFile);
 
-                // 리사이징 처리 (썸네일 400px 기준)
                 BufferedImage originalImage = ImageIO.read(destFile);
                 int targetWidth = 400;
                 int targetHeight = (originalImage.getHeight() * targetWidth) / originalImage.getWidth();
@@ -71,7 +70,7 @@ public class AdminController {
                 g.drawImage(originalImage.getScaledInstance(targetWidth, targetHeight, Image.SCALE_SMOOTH), 0, 0, null);
                 g.dispose();
 
-                ImageIO.write(resized, "jpg", destFile);  // 원본 파일 덮어쓰기
+                ImageIO.write(resized, "jpg", destFile);
 
                 // 경로 저장
                 product.setImageUrl("/img/products/" + fileName);

@@ -20,7 +20,8 @@ public class ProductService {
     }
 
     public List<Product> searchProductsByKeyword(String keyword) {
-        return productRepository.findByProductNameContainingIgnoreCase(keyword);
+        return productRepository.findByNameContainingIgnoreCase(keyword);
+
     }
 
     public List<Product> findAllProducts() {

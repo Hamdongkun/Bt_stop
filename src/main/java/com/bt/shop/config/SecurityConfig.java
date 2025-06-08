@@ -21,7 +21,8 @@ public class SecurityConfig {
                                 "/css/**", "/js/**", "/img/**",
                                 "/admin", "/admin/**",
                                 "/login", "/logout",
-                                "/cart", "/cart/add", "/cart/*/add"
+                                "/cart", "/cart/add", "/cart/*/add",
+                                "/payment","/processOrder", "/orderComplete"
                         ).permitAll()
                         .anyRequest().permitAll()
                 )

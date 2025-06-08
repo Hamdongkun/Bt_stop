@@ -28,7 +28,7 @@ public class SearchController {
             searchResults = productService.searchProductsByKeyword(keyword); // 키워드 검색
         }
 
-        model.addAttribute("results", searchResults);
+        model.addAttribute("searchResults", searchResults); // 여기만 수정!
         model.addAttribute("keyword", keyword == null ? "전체" : keyword);
         return "search_page";  // search_page.html
     }
