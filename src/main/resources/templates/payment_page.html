@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/globals.css" />
+  <link rel="stylesheet" href="/css/payment_page.css" />
+  <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <title>Buttle - 결제페이지</title>
+</head>
+<body>
+<div class="box">
+  <div class="overlap">
+    <!-- 상단 타이틀 영역 -->
+    <a href="#" class="logo1">Buttle</a>
+    <hr class="line1"/>
+    <span class="title-text">주문 결제</span>
+    <hr class="line2"/>
+    <span class="subtitle-text">배송 정보</span>
+    <hr class="line3"/>
+
+    <!-- 🚀 배송 정보는 order-summary 밖에서 출력해야 함! -->
+    <div class="form-group">
+      <input class="form-input" placeholder="받는사람" />
+
+      <div class="postcode-group">
+        <input id="postcode" class="form-input" placeholder="우편번호" />
+        <button type="button" class="find_address-button" onclick="execDaumPostcode()">주소 찾기</button>
+      </div>
+
+      <input id="address" class="form-input" placeholder="기본주소" />
+      <input id="detailAddress" class="form-input" placeholder="상세 주소 및 건물명" />
+      <input class="form-input" placeholder="휴대폰 번호" />
+    </div>
+
+    <!-- 🚀 주문 상품은 별도 카드로 독립 출력 -->
+    <div class="order-summary">
+      <h3 class="order-summary-title">주문 상품</h3>
+      <div class="order-items">
+        <div th:each="item : ${cartItems}" class="order-item">
+          <img th:src="@{${item.imageUrl}}" alt="상품 이미지" class="order-item-image" />
+          <div class="order-item-info">
+            <div class="order-item-name" th:text="${item.productName}">상품명</div>
+            <div class="order-item-quantity" th:text="'수량: ' + ${item.quantity} + '개'">수량</div>
+            <div class="order-item-price" th:text="${item.linePrice} + '원'">가격</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 총 결제 금액은 주문 상품 카드 안 마지막에 출력 -->
+      <div class="order-total">
+        <span>총 결제 금액</span>
+        <span class="order-total-price" th:text="${totalPrice} + '원'">총금액</span>
+      </div>
+    </div>
+
+    <!-- 주문하기 버튼 form -->
+    <form th:action="@{/processOrder}" method="post" id="orderForm">
+      <!-- CSRF 토큰 추가 -->
+      <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+
+      <!-- 배송 정보 hidden input -->
+      <input type="hidden" name="receiver" value="" id="receiver-input"/>
+      <input type="hidden" name="postcode" id="postcode-input"/>
+      <input type="hidden" name="address" id="address-input"/>
+      <input type="hidden" name="detailAddress" id="detailAddress-input"/>
+      <input type="hidden" name="phone" value="" id="phone-input"/>
+
+      <!-- 주문하기 버튼 (submit 버튼) -->
+      <button type="submit" class="payment-rectangle" onclick="updateOrderForm()">
+        <div class="payment-text">주문하기</div>
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- 주소찾기 스크립트 -->
+<script>
+  function execDaumPostcode() {
+    new daum.Postcode({
+      oncomplete: function(data) {
+        document.getElementById('postcode').value = data.zonecode;
+        document.getElementById('address').value = data.address;
+        document.getElementById('detailAddress').focus();
+      }
+    }).open();
+  }
+</script>
+
+<!-- 주문정보 form 값 채우는 스크립트 -->
+<script>
+  function updateOrderForm() {
+    document.getElementById('receiver-input').value = document.querySelector('input[placeholder="받는사람"]').value;
+    document.getElementById('postcode-input').value = document.getElementById('postcode').value;
+    document.getElementById('address-input').value = document.getElementById('address').value;
+    document.getElementById('detailAddress-input').value = document.getElementById('detailAddress').value;
+    document.getElementById('phone-input').value = document.querySelector('input[placeholder="휴대폰 번호"]').value;
+  }
+</script>
+
+</body>
+</html>

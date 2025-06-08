@@ -1,0 +1,160 @@
+/* 🚀 기본 레이아웃 */
+.box {
+    padding: 40px;
+}
+
+.overlap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+/* 🚀 배송 정보 form */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.form-input {
+    height: 72px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #787878;
+    border-radius: 12px;
+    color: #333;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #aaa;
+}
+
+.postcode-group {
+    display: flex;
+    gap: 10px;
+}
+
+.find_address-button {
+    height: 72px;
+    padding: 0 20px;
+    background-color: #ffffff;
+    border: 2px solid #686BFF;
+    border-radius: 12px;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 20px;
+    color: #686BFF;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.find_address-button:hover {
+    background-color: #686BFF;
+    color: #ffffff;
+}
+
+/* 🚀 주문 상품 영역 */
+.order-summary {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.order-summary-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.order-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.order-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.order-item-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.order-item-quantity,
+.order-item-price {
+    font-size: 16px;
+    color: #555;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 2px solid #686BFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.order-total-price {
+    color: #686BFF;
+    font-size: 24px;
+}
+
+/* 🚀 주문하기 버튼 (오른쪽 고정 원할 경우 유지) */
+.payment-rectangle {
+    position: absolute;
+    width: 324px;
+    height: 72px;
+    top: 100px; /* 🚩 top 값은 너가 적절히 조정 */
+    left: calc(100% + 40px); /* 🚩 주문카드 오른쪽 여백 */
+    background-color: #686aff;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.payment-rectangle:hover {
+    background-color: #4a4dcf;
+}
+
+.payment-text {
+    font-family: "Inter-Bold", Helvetica;
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0;
+}
