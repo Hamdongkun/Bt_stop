@@ -1,0 +1,106 @@
+/* 전체 공통 스타일 */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* 컨테이너 스타일 */
+.register-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 로고 스타일 */
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #686BFF;
+    margin-bottom: 10px;
+}
+
+/* 제목 스타일 */
+.title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 에러 메시지 */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* 입력 폼 전체 스타일 */
+.register-form input[type="text"],
+.register-form input[type="password"],
+.register-form input[type="email"],
+.register-form input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="password"]:focus,
+.register-form input[type="email"]:focus,
+.register-form input[type="tel"]:focus {
+    border-color: #686BFF;
+}
+
+/* 버튼 스타일 */
+.check-button {
+    margin-top: 5px;
+    padding: 8px 15px;
+    background-color: #686BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.check-button:hover {
+    background-color: #5757d1;
+}
+
+/* 연락처 입력 그룹 */
+.phone-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.phone-group input {
+    flex: 1;
+}
+
+/* 가입 버튼 스타일 */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #686BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #5757d1;
+}
