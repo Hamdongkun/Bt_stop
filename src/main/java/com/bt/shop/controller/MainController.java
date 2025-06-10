@@ -27,6 +27,11 @@ public class MainController {
     public String main(Model model) {
         List<Product> bestProducts = productService.getTop4BestProducts();
         model.addAttribute("bestProducts", bestProducts);
+
+        Long userId = 1L;
+        List<Product> recommendedProducts = productService.getRecommendedProductsForUser(userId);
+        model.addAttribute("recommendedProducts", recommendedProducts);
+
         return "main";
     }
 

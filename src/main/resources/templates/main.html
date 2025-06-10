@@ -18,7 +18,7 @@
         </form>
         <ul class="nav-icons">
             <li><a href="#"><img src="/img/main/user.svg" alt="User" /></a></li>
-            <li><a href="#"><img src="/img/main/delivery.svg" alt="Delivery" /></a></li>
+            <li><a href="/delivery"><img src="/img/main/delivery.svg" alt="Delivery" /></a></li>
             <li><a href="/cart" aria-label="Shopping bag"><img src="/img/main/cart.svg" alt="Cart" /></a></li>
         </ul>
         <a href="/login" class="login-button">로그인</a>
@@ -29,6 +29,8 @@
         <section class="title-section">
             <h2>베스트 상품</h2>
             <p>000님 / 로그인</p>
+            <!-- 전체 상품 보기 버튼 추가 -->
+            <a href="/search" class="view-all-button">전체 상품 보기</a>
         </section>
 
         <!-- 상품 그리드 -->
@@ -36,6 +38,25 @@
             <div class="product-grid">
                 <th:block th:each="item : ${bestProducts}">
                     <!-- 상품카드 전체에 링크 적용 -->
+                    <a th:href="@{'/product/' + ${item.productId}}" style="text-decoration: none; color: inherit;">
+                        <div class="product-card">
+                            <img th:src="@{${item.imageUrl}}" alt="상품 이미지" class="product-image" />
+                            <h3 th:text="${item.name}">상품명</h3>
+                            <p th:text="${item.price} + '원'">가격</p>
+                        </div>
+                    </a>
+                </th:block>
+            </div>
+        </section>
+
+        <section class="title-section" style="margin-top: 40px;">
+            <h2>사용자 맞춤 추천 상품</h2>
+            <p>000님을 위한 추천 상품입니다.</p>
+        </section>
+
+        <section class="product-section">
+            <div class="product-grid">
+                <th:block th:each="item : ${recommendedProducts}">
                     <a th:href="@{'/product/' + ${item.productId}}" style="text-decoration: none; color: inherit;">
                         <div class="product-card">
                             <img th:src="@{${item.imageUrl}}" alt="상품 이미지" class="product-image" />

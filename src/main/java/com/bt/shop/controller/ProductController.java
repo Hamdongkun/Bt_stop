@@ -1,56 +1,42 @@
 package com.bt.shop.controller;
 
 import com.bt.shop.model.Product;
-import com.bt.shop.model.Review;
-import com.bt.shop.repository.ProductRepository;
-import com.bt.shop.repository.ReviewRepository;
+import com.bt.shop.model.RecentView;
+import com.bt.shop.repository.RecentViewRepository;
+import com.bt.shop.service.ProductService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Controller
 public class ProductController {
 
-    private final ProductRepository productRepository;
-    private final ReviewRepository reviewRepository;
+    private final ProductService productService;
+    private final RecentViewRepository recentViewRepository;
 
-    public ProductController(ProductRepository productRepository, ReviewRepository reviewRepository) {
-        this.productRepository = productRepository;
-        this.reviewRepository = reviewRepository;
+    public ProductController(ProductService productService, RecentViewRepository recentViewRepository) {
+        this.productService = productService;
+        this.recentViewRepository = recentViewRepository;
     }
 
-    // 상세 페이지
-    @GetMapping("/product/{id}")
-    public String detail(@PathVariable Long id, Model model) {
-        Product product = productRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("해당 상품 없음"));
+    @GetMapping("/product/{productId}")
+    public String productDetail(@PathVariable Long productId, Model model) {
+        Long userId = 1L; // 추후 로그인 사용자로 변경
 
-        List<Review> reviews = reviewRepository.findByProductId(id);
-
-        double avgRating = reviews.stream()
-                .mapToInt(Review::getRating)
-                .average()
-                .orElse(0.0);
-
+        // 상품 조회
+        Product product = productService.getProductById(productId);
         model.addAttribute("product", product);
-        model.addAttribute("reviews", reviews);
-        model.addAttribute("avgRating", avgRating);
 
-        return "product_detail";  // templates/product_detail.html
-    }
+        // 최근 본 상품 기록 저장
+        RecentView recentView = new RecentView();
+        recentView.setUserId(userId);
+        recentView.setProductId(productId);
+        recentView.setViewedAt(LocalDateTime.now());
+        recentViewRepository.save(recentView);
 
-    // 리뷰 저장
-    @PostMapping("/product/{id}/review")
-    public String submitReview(@PathVariable Long id,
-                               @ModelAttribute("newReview") Review review) {
-        review.setProductId(id);
-        review.setCreateAt(LocalDateTime.now());
-        review.setUserId(999L); // 테스트용 사용자 ID. 추후 로그인 정보에서 가져와야 함
-
-        reviewRepository.save(review);
-        return "redirect:/product/" + id;
+        return "product_detail"; // 해당 페이지의 Thymeleaf 템플릿명
     }
 }

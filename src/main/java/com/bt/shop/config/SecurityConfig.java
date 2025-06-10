@@ -22,7 +22,7 @@ public class SecurityConfig {
                                 "/admin", "/admin/**",
                                 "/login", "/logout",
                                 "/cart", "/cart/add", "/cart/*/add",
-                                "/payment","/processOrder", "/orderComplete"
+                                "/payment","/processOrder", "/orderComplete,/register"
                         ).permitAll()
                         .anyRequest().permitAll()
                 )
